@@ -1,0 +1,43 @@
+/* 
+  Remove as margens e espaçamentos padrões
+  que o navegador adiciona nos elementos.
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* 
+  Configuração principal da página.
+*/
+body {
+  /*
+    Define a cor de fundo principal.
+  */
+  --s3-fundoCadastro: #ffffff;
+  --s3-fundoPrincipal: #0a0b14;
+
+  /*
+    Define uma fonte padrão.
+    Podemos mudar depois para uma fonte mais parecida
+    com o design do S3Bank.
+  */
+  font-family: Arial, Helvetica, sans-serif;
+
+  /*
+    Evita que a página tenha rolagem horizontal.
+  */
+  overflow-x: hidden;
+}
+
+
+/*
+  Faz com que botões e inputs utilizem
+  a mesma fonte definida no projeto.
+*/
+button,
+input {
+  font-family: inherit;
+}
