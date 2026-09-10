@@ -1,0 +1,4 @@
+.cadastro {
+  min-height: 100vh;
+  background-color: var(--s3-fundoCadastro);
+}
