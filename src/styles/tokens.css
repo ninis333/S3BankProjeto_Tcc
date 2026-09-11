@@ -1,0 +1,46 @@
+:root{
+
+/* ===== Paleta S3Bank ===== */
+  /* Fundo */
+--s3-fundoCadastro: #ffffff;
+--s3-fundoPrincipal: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 1%,
+      rgba(37, 22, 65, 1) 37%,
+      rgba(95, 56, 165, 1) 70%,
+      rgba(96, 65, 184, 1) 80%,
+      rgba(90, 73, 199, 1) 88%,
+      rgba(84, 75, 201, 1) 92%,
+      rgba(66, 80, 206, 1) 100%
+    );
+
+      /* Gradiente de marca — extraído do cartão Diamante */
+  --s3-violet: #6f42c1;
+  --s3-blue: #3355d3;
+  --s3-cobalt: #1e2b88;
+
+   /* Tons de apoio dos outros cartões */
+  --s3-gold: #cba15c;
+  --s3-gold-dark: #8a6a2f;
+  --s3-silver: #c0c0c0;
+  --s3-silver-dark: #8e8e93;
+  --s3-magenta: #d61f7a;
+
+    /* ===== Tipografia =====*/
+--font-display: 'Space Grotesk', 'Inter', sans-serif;
+--font-body: 'Inter', -apple-system, sans-serif;
+--font-mono: 'Space Mono', 'Courier New', monospace;
+--font-serif: 'Baskervville', serif;
+
+}
+
+ /* ===== Tipografia =====*/
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

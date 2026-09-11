@@ -14,32 +14,11 @@
 */
 body {
   /*
-    Define a cor de fundo principal.
-  */
-  --s3-fundoCadastro: #ffffff;
-  --s3-fundoPrincipal: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 1) 1%,
-      rgba(37, 22, 65, 1) 37%,
-      rgba(95, 56, 165, 1) 70%,
-      rgba(96, 65, 184, 1) 80%,
-      rgba(90, 73, 199, 1) 88%,
-      rgba(84, 75, 201, 1) 92%,
-      rgba(66, 80, 206, 1) 100%
-    );
-
-  /*
-    Define uma fonte padrão.
-    Podemos mudar depois para uma fonte mais parecida
-    com o design do S3Bank.
-  */
-  font-family: Arial, Helvetica, sans-serif;
-
-  /*
     Evita que a página tenha rolagem horizontal.
   */
   overflow-x: hidden;
 }
+
 
 
 /*
