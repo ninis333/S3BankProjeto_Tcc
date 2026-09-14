@@ -4,22 +4,32 @@ import LogoCor from './../../assets/imagens/Logos/Logo_Cor.png'
 import LogoBranco from './../../assets/imagens/Logos/Logo_Branco.png'
 import '././../../styles/tokens.css'
 import Cartoes from './../../assets/imagens/Cartões/Cartoes_juntos.png'
-import { FaLock } from "react-icons/fa";
+import { FaPhone, FaPhoneAlt, FaEnvelope, FaLock } from 'react-icons/fa'
+import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function Cadastro() {
-	return (
-		<main className="cadastro">
-			<div className="containerEsquerda">	
-			<LogoCorEsquerda />
-			<TextoCor />
-			<Subtitulo />
-			<CartoesJuntos />
-      		<FaLock />
-			<TextoFinal />
-			</div>
-			<div className="containerDireita">
-			<BoxCadastro />
+	const [paginaCarregada, setPaginaCarregada] = useState(false)
 
+	useEffect(() => {
+		setPaginaCarregada(true)
+	}, [])
+
+	return (
+		<main className={`cadastro ${paginaCarregada ? 'pagina-carregada' : ''}`}>
+			<div className="containerTodo">
+				<div className="containerEsquerda">	
+					<LogoCorEsquerda />
+					<TextoCor />
+					<Subtitulo />
+					<CartoesJuntos />
+				</div>
+				<div className="containerDireita">
+					<BoxCadastro />
+				</div>
+			</div>
+			<div className="footerPaginaCadastro">
+				<FooterCadastro />
 			</div>
 		</main>
 	)
@@ -89,32 +99,50 @@ export const CartoesJuntos = () => {
 }
 
 /* 
-  texto footer
+  box cor
 */
 
-export const TextoFinal = () => {
-  return (
-    <div className="textoFinal">
-      <p className="sua-vida-fianceira">
-        Sua vida fianceira <br />
-        em um só lugar.
-      </p>
-    </div>
-  );
-}
 
 export const BoxCadastro = () => {
+	const navigate = useNavigate()
+
   return (
     <div className="box">
-      <div className="retangulo" />
-	<img src={LogoBranco} alt="Logo_Branco" className="logo-branco" />
-    <button>Entrar como convidado</button>
-	<p className="sua-vida-fianceira">
-        Sua organização financeira <br />
-		nunca ficou tão facil
-      </p>
+	  <div className="retangulo">
+		<h1 className="logoBranco">S3Bank</h1>
+		<button className="botao-convidado" onClick={() => navigate('/home')}>
+		  Entrar como convidado
+		</button>
+	    <p className="sua-organizacao-financeira">
+          Sua organização financeira <br />
+	      nunca ficou tão facil
+        </p>
+	  </div>
 	</div>
 	
   );
 }
 
+/* 
+  texto footer
+*/
+
+export const FooterCadastro = () => {
+	return (
+  <div className="footerCadastro">
+	<FaLock />
+      <p className="seguro-footer">
+       Ambiente 100% seguro
+      </p>
+	  <FaEnvelope />
+	  <p className="email-footer">
+       S3Bank@gmail.com
+      </p>
+	  <FaPhone />
+	  <p className="telefone-footer">
+       +55 11 9999-9999
+      </p>
+	  
+    </div>
+  );
+}

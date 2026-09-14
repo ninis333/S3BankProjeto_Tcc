@@ -14,6 +14,16 @@
       rgba(66, 80, 206, 1) 100%
     );
 
+       /* Tons de tipografias */
+  --s3-tituloCor: linear-gradient(
+      90deg,
+      rgba(54, 74, 255, 1) 0%,
+      rgba(195, 126, 255, 1) 100%
+    );
+  --s3-textoCinza: #a8a8a8;
+   --s3-textoMeio: #ffffffc4;
+  --s3-textoBranco: #ffffff;
+
       /* Gradiente de marca — extraído do cartão Diamante */
   --s3-violet: #6f42c1;
   --s3-blue: #3355d3;
@@ -30,7 +40,7 @@
 --font-display: 'Space Grotesk', 'Inter', sans-serif;
 --font-body: 'Inter', -apple-system, sans-serif;
 --font-mono: 'Space Mono', 'Courier New', monospace;
---font-serif: 'Baskervville', serif;
+--font-Baskervville: 'Baskervville', serif;
 
 }
 
