@@ -1,3 +1,57 @@
 .home{
-    background-color: var(--s3-fundoPrincipal);
+    background: var(--s3-fundoPrincipal);
+    min-height: 100vh;
+    height: 4000px;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    font-family: var(--font-inter);
+    justify-content: space-between;
+    padding: 50px 150px;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.137);
+}
+
+.linksEsquerda,
+.linksDireita {
+    align-items: center;
+    display: flex;
+    gap: 50px;
+}
+
+.links {
+    color: var(--s3-textoCinza);
+    font-weight: 400;
+    margin: 0;
+}
+
+.linkEntrar {
+    color: var(--s3-textoBranco);
+    font-weight: 400;
+    margin: 0;
+}
+
+.botaoConta {
+    font-size: 14px;
+    font-family: var(--font-inter);
+    color: var(--s3-textoBranco);
+    height: 40px;
+    width: 164px;
+    background: linear-gradient(
+    90deg,
+    #6F42C1 0%,
+    #3355D3 100%);
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 12px 20px;
+}
+
+.pInicial{
+    font-family: var(--font-mono);
+    color: var(--s3-textoCinza);
 }
