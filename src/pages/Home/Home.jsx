@@ -1,6 +1,9 @@
 import './Home.css'
 import '././../../index.css'
 import '././../../styles/tokens.css'
+import Cartoes from './../../assets/imagens/Cartões/cartao_bronze.png'
+import CartaoEmPe from './../../assets/imagens/Cartões/cartao_bronze_em_pe.png'
+import CartaoLadinho from './../../assets/imagens/Cartões/cartaoBronzeLadinho.png'
 
 export default Home
 
@@ -36,7 +39,39 @@ export const Header = () => {
 export const BodyHome = () => {
   return (
     <div className="bodyHome">
-		<p className='pInicial'>· CONTA DIGITAL · CARTÂO DE METAL</p>
-    </div>
+		<div className='containerEsquerda'>
+			<p className='pInicial'>· CONTA DIGITAL · CARTÂO DE METAL</p>
+			<h1 className='h1Principal'>O banco que se</h1>
+			<h1 className='h1PrincipalCor'>Forja no seu ritmo.</h1>
+			<p className='pTexto'>Abra sua conta em minutos, escolha o cartão de metal <br />
+			que combina com você e acompanhe cada centavo <br />
+			em tempo real. Sem tarifa de manutenção, sem anuidade, <br />
+			sem letras miúdas.</p>
+			<button>Abrir minha conta</button>
+			<button>Ver os cartões</button>
+			<hr />
+			
+			<div className='vantagens'>
+			<h2>0</h2>
+			<p>tarifa de <br /> manutenção</p>
+			</div>
+			<div className='vantagens'>
+			<h2>100%</h2>
+			<p> digital, <br /> do cadastro ao cartão</p>
+			</div>
+			<div className='vantagens'>
+			<h2>24/7</h2>
+			<p>Suporte no App</p>
+			</div>
+		</div>
+
+		<div className='containerDireita'>
+			<img src={Cartoes} alt="Cartões" className="cartoes" />
+			<img src={CartaoLadinho} alt="Cartões" className="cartoes" />
+			
+		</div>
+	
+	</div>
   );
 }
+
