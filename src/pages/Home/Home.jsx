@@ -4,6 +4,7 @@ import '././../../styles/tokens.css'
 import Cartoes from './../../assets/imagens/Cartões/cartao_bronze.png'
 import CartaoEmPe from './../../assets/imagens/Cartões/cartao_bronze_em_pe.png'
 import CartaoLadinho from './../../assets/imagens/Cartões/cartaoBronzeLadinho.png'
+import cartaoHome from '././../../assets/imagens/Cartões/cartaoHome.png'
 
 export default Home
 
@@ -42,13 +43,13 @@ export const BodyHome = () => {
 		<div className='containerEsquerda'>
 			<p className='pInicial'>· CONTA DIGITAL · CARTÂO DE METAL</p>
 			<h1 className='h1Principal'>O banco que se</h1>
-			<h1 className='h1PrincipalCor'>Forja no seu ritmo.</h1>
+			<h1 className='h1PrincipalCor'>forja no seu ritmo.</h1>
 			<p className='pTexto'>Abra sua conta em minutos, escolha o cartão de metal <br />
 			que combina com você e acompanhe cada centavo <br />
 			em tempo real. Sem tarifa de manutenção, sem anuidade, <br />
 			sem letras miúdas.</p>
-			<button>Abrir minha conta</button>
-			<button>Ver os cartões</button>
+			<button className='buttonHome'>Abrir minha conta</button>
+			<button className='buttonHomeCor'>Ver os cartões</button>
 			<hr />
 			
 			<div className='vantagens'>
@@ -66,9 +67,7 @@ export const BodyHome = () => {
 		</div>
 
 		<div className='containerDireita'>
-			<img src={Cartoes} alt="Cartões" className="cartoes" />
-			<img src={CartaoLadinho} alt="Cartões" className="cartoes" />
-			
+			<img src={cartaoHome} alt="cartaoHome" className="cartaoHome" />
 		</div>
 	
 	</div>

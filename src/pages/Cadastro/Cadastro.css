@@ -78,7 +78,6 @@
 }
 
 .containerTodo{
-  align-items: flex-start;
   display: flex;
   gap: 50px;
   justify-content: flex-start;
@@ -125,6 +124,8 @@
   margin-left: 10px;
   height: 450px;
   width: 400px;
+    max-width: 100%;
+    height: auto;
 }
 
 .box{
@@ -209,4 +210,15 @@
 
 .footerCadastro p {
   margin: 0;
+}
+
+.retangulo {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background: rgba(148, 99, 255, 0.2);
+    border-radius: 30px;
+    z-index: 0;
+    right: 40px;
+    bottom: 40px;
 }
